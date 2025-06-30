@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""Script  for using a REST API for a given employee ID, returns information about his/er TODO list progress."""
+"""Script to use a REST API for a given employee ID, returns
+information about his/her TODO list progress"""
 import requests
 import sys
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -30,4 +32,3 @@ if __name__ == "__main__":
           f"({total_done_tasks}/{total_tasks}):")
     for task in done_tasks:
         print(f"\t {task['title']}")
-
